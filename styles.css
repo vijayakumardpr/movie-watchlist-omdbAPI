@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  height: 75vh;
+  /* background-color: #121212; */
+}
+
+.navbar {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(./images/film.png);
+  height: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 22%;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.title {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.navbar > a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 400px;
+  padding: 0.5em;
+  font-size: 1.25rem;
+  outline: none;
+  background-color: #2e2e2f;
+  border: none;
+  color: #fff;
+  border-radius: 5px 0 0 5px;
+}
+
+button {
+  padding: 0.5em 3em;
+  font-size: 1.25rem;
+  background-color: #4b4b4b;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.movie-container,
+.selected-watchlist {
+  display: grid;
+  place-content: center;
+  margin-top: 35px;
+}
+
+.movie {
+  width: 550px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.movie-details {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h3 > span {
+  font-size: 0.85rem;
+}
+
+.movie-details > p:nth-child(2) {
+  font-size: 0.85rem;
+}
+
+.plot {
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.runtime,
+.genre {
+  margin-right: 20px;
+}
+
+.icon-watchlist {
+  cursor: pointer;
+}
+
+.empty-watchlist {
+  display: grid;
+  place-items: center;
+}
+
+.not-found {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
